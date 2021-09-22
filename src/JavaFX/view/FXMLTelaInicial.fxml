@@ -26,12 +26,15 @@
       </MenuBar>
       <AnchorPane prefHeight="575.0" prefWidth="800.0">
          <children>
-            <Label fx:id="palavraDici" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="84.0" prefHeight="61.0" prefWidth="349.0" text="Palavra">
+            <Label fx:id="palavraDici" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="99.0" prefHeight="61.0" prefWidth="349.0" text="Palavra">
                <font>
                   <Font name="Yu Gothic Bold" size="50.0" />
                </font>
             </Label>
-            <Button fx:id="confirmar" layoutX="366.0" layoutY="250.0" mnemonicParsing="false" text="Confirmar" />
+            <Button fx:id="confirmar" layoutX="362.0" layoutY="275.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="77.0" text="OK" textFill="DARKORANGE">
+               <font>
+                  <Font name="Yu Gothic UI Bold" size="12.0" />
+               </font></Button>
             <Label fx:id="acertos" alignment="CENTER" layoutX="29.0" layoutY="527.0" prefHeight="25.0" prefWidth="31.0" text="0" textFill="#11bc36">
                <font>
                   <Font name="System Bold" size="18.0" />
@@ -53,7 +56,7 @@
                </font>
             </Label>
             
-            <Label alignment="CENTER" layoutX="518.0" layoutY="394.0" prefHeight="35.0" prefWidth="250.0" text="Ultima Palavra" AnchorPane.rightAnchor="32.0">
+            <Label alignment="CENTER" layoutX="507.0" layoutY="394.0" prefHeight="35.0" prefWidth="250.0" text="Ultima Palavra" textFill="DARKORANGE" AnchorPane.rightAnchor="43.0">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
@@ -101,7 +104,7 @@
                   </Label>
                </children>
             </GridPane>
-            <TextField layoutX="276.0" layoutY="192.0" prefHeight="25.0" prefWidth="250.0" />
+            <TextField layoutX="275.0" layoutY="200.0" prefHeight="25.0" prefWidth="250.0" />
          </children>
       </AnchorPane>
    </children>

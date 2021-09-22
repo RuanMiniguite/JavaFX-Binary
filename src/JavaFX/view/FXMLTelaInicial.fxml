@@ -1,11 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.controller.FXMLTelaInicialController">
-    
-</AnchorPane>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Bin">
+            <items>
+              <MenuItem mnemonicParsing="false" text="ASCII" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="575.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="palavraDici" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="84.0" prefHeight="61.0" prefWidth="349.0" text="Palavra">
+               <font>
+                  <Font name="Yu Gothic Bold" size="50.0" />
+               </font>
+            </Label>
+            <Button fx:id="confirmar" layoutX="366.0" layoutY="250.0" mnemonicParsing="false" text="Confirmar" />
+            <Label fx:id="acertos" alignment="CENTER" layoutX="29.0" layoutY="527.0" prefHeight="25.0" prefWidth="31.0" text="0" textFill="#11bc36">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="erros" alignment="CENTER" layoutX="99.0" layoutY="527.0" prefHeight="25.0" prefWidth="31.0" text="0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="15.0" layoutY="493.0" prefHeight="36.0" prefWidth="60.0" text="Acertos">
+               <font>
+                  <Font name="Yu Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="85.0" layoutY="493.0" prefHeight="36.0" prefWidth="60.0" text="Erros">
+               <font>
+                  <Font name="Yu Gothic Bold" size="14.0" />
+               </font>
+            </Label>
+            
+            <Label alignment="CENTER" layoutX="518.0" layoutY="394.0" prefHeight="35.0" prefWidth="250.0" text="Ultima Palavra" AnchorPane.rightAnchor="32.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="521.0" layoutY="440.0" prefHeight="90.0" prefWidth="272.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="136.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="136.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="20.0" prefWidth="92.0" text="Palavra">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="92.0" text="Binario correto" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="92.0" text="Binario Escrito" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ultimaPalavra" alignment="CENTER" prefHeight="17.0" prefWidth="130.0" text="palavra" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="binC" alignment="CENTER" prefHeight="17.0" prefWidth="130.0" text="binC" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="BinE" alignment="CENTER" prefHeight="17.0" prefWidth="130.0" text="binE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <TextField layoutX="276.0" layoutY="192.0" prefHeight="25.0" prefWidth="250.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

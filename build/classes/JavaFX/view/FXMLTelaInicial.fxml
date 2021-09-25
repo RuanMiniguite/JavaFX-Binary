@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.controller.FXMLTelaInicialController">
    <children>
       <MenuBar>
         <menus>
@@ -26,39 +26,38 @@
       </MenuBar>
       <AnchorPane prefHeight="575.0" prefWidth="800.0">
          <children>
-            <Label fx:id="palavraDici" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="84.0" prefHeight="61.0" prefWidth="349.0" text="Palavra">
+            <Label fx:id="palavraDici" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="99.0" prefHeight="61.0" prefWidth="349.0" text="Palavra">
                <font>
                   <Font name="Yu Gothic Bold" size="50.0" />
                </font>
             </Label>
-            <Button fx:id="confirmar" layoutX="366.0" layoutY="250.0" mnemonicParsing="false" text="Confirmar" />
-            <Label fx:id="acertos" alignment="CENTER" layoutX="29.0" layoutY="527.0" prefHeight="25.0" prefWidth="31.0" text="0" textFill="#11bc36">
+            <Label fx:id="acertos" alignment="CENTER" layoutX="29.0" layoutY="545.0" prefHeight="25.0" prefWidth="31.0" text="0" textFill="#11bc36">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="erros" alignment="CENTER" layoutX="99.0" layoutY="527.0" prefHeight="25.0" prefWidth="31.0" text="0" textFill="RED">
+            <Label fx:id="erros" alignment="CENTER" layoutX="99.0" layoutY="545.0" prefHeight="25.0" prefWidth="31.0" text="0" textFill="RED">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="15.0" layoutY="493.0" prefHeight="36.0" prefWidth="60.0" text="Acertos">
+            <Label alignment="CENTER" layoutX="15.0" layoutY="513.0" prefHeight="36.0" prefWidth="60.0" text="Acertos">
                <font>
                   <Font name="Yu Gothic Bold" size="14.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="85.0" layoutY="493.0" prefHeight="36.0" prefWidth="60.0" text="Erros">
+            <Label alignment="CENTER" layoutX="85.0" layoutY="513.0" prefHeight="36.0" prefWidth="60.0" text="Erros">
                <font>
                   <Font name="Yu Gothic Bold" size="14.0" />
                </font>
             </Label>
             
-            <Label alignment="CENTER" layoutX="507.0" layoutY="394.0" prefHeight="35.0" prefWidth="250.0" text="Ultima Palavra" textFill="DARKORANGE" AnchorPane.rightAnchor="43.0">
+            <Label alignment="CENTER" layoutX="507.0" layoutY="417.0" prefHeight="35.0" prefWidth="250.0" text="Ultima Palavra" textFill="DARKORANGE" AnchorPane.rightAnchor="43.0">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <GridPane layoutX="521.0" layoutY="440.0" prefHeight="90.0" prefWidth="272.0">
+            <GridPane layoutX="521.0" layoutY="463.0" prefHeight="90.0" prefWidth="272.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="136.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="136.0" />
@@ -101,7 +100,11 @@
                   </Label>
                </children>
             </GridPane>
-            <TextField layoutX="276.0" layoutY="192.0" prefHeight="25.0" prefWidth="250.0" />
+            <TextField alignment="CENTER" layoutX="275.0" layoutY="200.0" prefHeight="25.0" prefWidth="250.0" />
+            <Button layoutX="364.0" layoutY="263.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="OK" textFill="DARKORANGE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
          </children>
       </AnchorPane>
    </children>

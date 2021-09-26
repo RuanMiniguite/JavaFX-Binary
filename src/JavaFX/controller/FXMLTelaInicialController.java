@@ -17,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
 
 
 public class FXMLTelaInicialController implements Initializable {
@@ -98,9 +99,11 @@ public class FXMLTelaInicialController implements Initializable {
         if(palavraTextF.equals(resultBin)){
             acertos++;
             Lacertos.setText(Integer.toString(acertos));
+            BinE.setTextFill(Color.rgb(27, 166, 73, 1));
         }else{
             erros++;
             Lerros.setText(Integer.toString(erros));
+            BinE.setTextFill(Color.rgb(166, 27, 27, 1));
         }
 
         //Campos Ultima palavra

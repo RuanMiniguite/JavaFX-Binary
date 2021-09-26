@@ -19,7 +19,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="Bin">
             <items>
-              <MenuItem mnemonicParsing="false" text="ASCII" />
+              <MenuItem mnemonicParsing="false" onAction="#showtelaAscii" text="ASCII" />
             </items>
           </Menu>
         </menus>
@@ -59,11 +59,11 @@
             </Label>
             <TextField fx:id="textBin" alignment="CENTER" layoutX="39.0" layoutY="188.0" prefHeight="30.0" prefWidth="724.0">
                <font>
-                  <Font size="14.0" />
+                  <Font name="System Bold" size="17.0" />
                </font></TextField>
-            <Button layoutX="364.0" layoutY="251.0" mnemonicParsing="false" onAction="#clickOk" prefHeight="25.0" prefWidth="73.0" text="OK" textFill="DARKORANGE">
+            <Button layoutX="362.0" layoutY="245.0" mnemonicParsing="false" onAction="#clickOk" prefHeight="30.0" prefWidth="79.0" text="OK" textFill="DARKORANGE">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="14.0" />
                </font></Button>
             <GridPane layoutX="25.0" layoutY="379.0" prefHeight="181.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
               <columnConstraints>

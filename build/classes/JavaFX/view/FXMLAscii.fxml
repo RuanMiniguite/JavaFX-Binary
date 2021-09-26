@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.controller.FXMLAsciiController">
+   <children>
+      <ImageView fitHeight="519.0" fitWidth="406.0" layoutX="34.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/binario.PNG" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="140.0" layoutY="14.0" prefHeight="17.0" prefWidth="191.0" text="Ascii" textFill="DARKORANGE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

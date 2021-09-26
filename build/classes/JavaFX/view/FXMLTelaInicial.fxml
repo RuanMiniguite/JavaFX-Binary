@@ -19,7 +19,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="Bin">
             <items>
-              <MenuItem mnemonicParsing="false" text="ASCII" />
+              <MenuItem mnemonicParsing="false" onAction="#showtelaAscii" text="ASCII" />
             </items>
           </Menu>
         </menus>

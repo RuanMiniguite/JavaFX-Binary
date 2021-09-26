@@ -16,8 +16,13 @@ import java.util.stream.Collectors;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 
 public class FXMLTelaInicialController implements Initializable {
@@ -99,7 +104,7 @@ public class FXMLTelaInicialController implements Initializable {
         if(palavraTextF.equals(resultBin)){
             acertos++;
             Lacertos.setText(Integer.toString(acertos));
-            BinE.setTextFill(Color.rgb(27, 166, 73, 1));
+            BinE.setTextFill(Color.rgb(27, 166, 72, 1));
         }else{
             erros++;
             Lerros.setText(Integer.toString(erros));
@@ -126,5 +131,22 @@ public class FXMLTelaInicialController implements Initializable {
         }
         return result.stream().collect(Collectors.joining(separator));
     }
-
+    
+    @FXML
+    public void showtelaAscii() throws IOException{    
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(FXMLAsciiController.class.getResource("/javaFX/view/FXMLAscii.fxml"));
+        AnchorPane page = (AnchorPane) loader.load();
+    
+        Stage dialogStage = new Stage();
+        dialogStage.setTitle("ASCII");
+        Scene scene = new Scene(page);
+        dialogStage.setScene(scene);
+        
+        FXMLAsciiController controller = loader.getController();
+        dialogStage.getIcons().add(new Image("/javaFX/img/b-512x512.png"));
+        
+        dialogStage.setResizable(false);
+        dialogStage.showAndWait();
+    }
 }

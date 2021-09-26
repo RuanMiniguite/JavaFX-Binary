@@ -5,8 +5,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import static java.lang.Integer.parseInt;
-import static java.lang.System.out;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -62,8 +60,6 @@ public class FXMLTelaInicialController implements Initializable {
         int lin = gerador.nextInt(29857) + 1;
         int i = 0;
         
-        System.out.println(lin);
-        
         FileReader arq = new FileReader("C:\\Users\\ruanm\\Documents\\Github\\JavaFX-Binary\\src\\JavaFX\\database\\Lista-de-Palavras.txt");
         BufferedReader lerArq = new BufferedReader(arq);
         String linha = lerArq.readLine();
@@ -83,43 +79,35 @@ public class FXMLTelaInicialController implements Initializable {
     public void clickOk(){
         String palavraLabel = palavraDici.getText();
         String palavraTextF = textBin.getText();
-
-        
-//        System.out.printf(palavraLabel);
-//        System.out.println(palavraTextF);
         
         
-        StringBuilder BinTextF = new StringBuilder();
-        char[] chars2 = palavraTextF.toCharArray();
-        for (char aChar : chars2) {
-            BinTextF.append(
+        StringBuilder BinText = new StringBuilder();
+        char[] chars = palavraLabel.toCharArray();
+        for (char aChar : chars) {
+            BinText.append(
                     String.format("%8s", Integer.toBinaryString(aChar))   
                             .replaceAll(" ", "0")                         
             );
         }
         
-//        System.out.println(BinTextF);
-//        System.out.println(prettyBinary(BinTextF, 8, " "));
-
-
-        StringBuilder BinLabel = new StringBuilder();
-        char[] chars1 = palavraLabel.toCharArray();
-        for (char aChar : chars1) {
-            BinLabel.append(
-                    String.format("%8s", Integer.toBinaryString(aChar))   
-                            .replaceAll(" ", "0")                         
-            );
+        String resultBin = prettyBinary(BinText, 8, " ");
+        
+//        System.out.println(resultBin);
+//        System.out.println(palavraTextF);  
+        
+        if(palavraTextF.equals(resultBin)){
+            acertos++;
+            Lacertos.setText(Integer.toString(acertos));
+        }else{
+            erros++;
+            Lerros.setText(Integer.toString(erros));
         }
-        
-//        System.out.println(BinLabel);
-//        System.out.println(prettyBinary(BinLabel, 8, " "));
-        
-        
+
         //Campos Ultima palavra
         UltPalavra.setText(palavraLabel);
-        binC.setText(prettyBinary(BinLabel, 8, " "));
-        BinE.setText(prettyBinary(BinTextF, 8, " "));
-                
+        binC.setText(prettyBinary(BinText, 8, " "));
+        BinE.setText(palavraTextF);
+        
     }
 
     

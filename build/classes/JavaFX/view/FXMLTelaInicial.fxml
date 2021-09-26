@@ -26,7 +26,7 @@
       </MenuBar>
       <AnchorPane prefHeight="575.0" prefWidth="800.0">
          <children>
-            <Label fx:id="palavraDici" alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="99.0" prefHeight="61.0" prefWidth="349.0" text="Palavra">
+            <Label fx:id="palavraDici" alignment="CENTER" contentDisplay="CENTER" layoutX="39.0" layoutY="99.0" prefHeight="61.0" prefWidth="724.0" text="Palavra">
                <font>
                   <Font name="Yu Gothic Bold" size="50.0" />
                </font>
@@ -52,15 +52,15 @@
                </font>
             </Label>
             
-            <Label alignment="CENTER" layoutX="507.0" layoutY="417.0" prefHeight="35.0" prefWidth="250.0" text="Ultima Palavra" textFill="DARKORANGE" AnchorPane.rightAnchor="43.0">
+            <Label alignment="CENTER" layoutX="507.0" layoutY="417.0" prefHeight="35.0" prefWidth="378.0" text="Ultima Palavra" textFill="DARKORANGE" AnchorPane.rightAnchor="43.0">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <GridPane layoutX="521.0" layoutY="463.0" prefHeight="90.0" prefWidth="272.0">
+            <GridPane layoutX="379.0" layoutY="468.0" prefHeight="90.0" prefWidth="378.0">
               <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="136.0" />
-                <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="136.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="80.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="228.0" />
               </columnConstraints>
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -83,25 +83,28 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label fx:id="ultimaPalavra" alignment="CENTER" prefHeight="17.0" prefWidth="130.0" text="palavra" GridPane.columnIndex="1">
+                  <Label fx:id="UltPalavra" alignment="CENTER" prefHeight="20.0" prefWidth="270.0" text="palavra" GridPane.columnIndex="1">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label fx:id="binC" alignment="CENTER" prefHeight="17.0" prefWidth="130.0" text="binC" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <Label fx:id="binC" alignment="CENTER" prefHeight="20.0" prefWidth="270.0" text="binC" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label fx:id="BinE" alignment="CENTER" prefHeight="17.0" prefWidth="130.0" text="binE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <Label fx:id="BinE" alignment="CENTER" prefHeight="20.0" prefWidth="270.0" text="binE" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
                </children>
             </GridPane>
-            <TextField alignment="CENTER" layoutX="275.0" layoutY="200.0" prefHeight="25.0" prefWidth="250.0" />
-            <Button layoutX="364.0" layoutY="263.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="OK" textFill="DARKORANGE">
+            <TextField fx:id="textBin" alignment="CENTER" layoutX="39.0" layoutY="200.0" prefHeight="30.0" prefWidth="724.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Button layoutX="364.0" layoutY="263.0" mnemonicParsing="false" onAction="#clickOk" prefHeight="25.0" prefWidth="73.0" text="OK" textFill="DARKORANGE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>

@@ -14,7 +14,7 @@ public class JavaFXBinary extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("View/FXMLTelaInicial.fxml"));
         Scene scene = new Scene(root);
-        
+         
         stage.setScene(scene);
         stage.getIcons().add(new Image("/javaFX/img/b-512x512.png"));
         stage.setTitle("Binary");

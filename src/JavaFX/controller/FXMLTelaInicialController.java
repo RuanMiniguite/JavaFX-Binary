@@ -98,8 +98,8 @@ public class FXMLTelaInicialController implements Initializable {
             );
         }
         
-        System.out.println(BinTextF);
-        System.out.println(prettyBinary(BinTextF, 8, " "));
+//        System.out.println(BinTextF);
+//        System.out.println(prettyBinary(BinTextF, 8, " "));
 
 
         StringBuilder BinLabel = new StringBuilder();
@@ -111,8 +111,8 @@ public class FXMLTelaInicialController implements Initializable {
             );
         }
         
-        System.out.println(BinLabel);
-        System.out.println(prettyBinary(BinLabel, 8, " "));
+//        System.out.println(BinLabel);
+//        System.out.println(prettyBinary(BinLabel, 8, " "));
         
         
         //Campos Ultima palavra
@@ -131,7 +131,6 @@ public class FXMLTelaInicialController implements Initializable {
             result.add(binary.substring(index, Math.min(index + blockSize, binary.length())));
             index += blockSize;
         }
-
         return result.stream().collect(Collectors.joining(separator));
     }
 

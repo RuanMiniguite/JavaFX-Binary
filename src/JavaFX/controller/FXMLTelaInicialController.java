@@ -76,7 +76,7 @@ public class FXMLTelaInicialController implements Initializable {
     }
     
     @FXML
-    public void clickOk(){
+    public void clickOk() throws IOException{
         String palavraLabel = palavraDici.getText();
         String palavraTextF = textBin.getText();
         
@@ -108,6 +108,8 @@ public class FXMLTelaInicialController implements Initializable {
         binC.setText(prettyBinary(BinText, 8, " "));
         BinE.setText(palavraTextF);
         
+        getWord();
+        textBin.setText("");
     }
 
     

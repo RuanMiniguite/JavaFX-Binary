@@ -37,6 +37,14 @@ public class FXMLTelaInicialController implements Initializable {
     @FXML
     private Label BinE;
     
+    @FXML
+    private Label Lacertos;
+    @FXML
+    private Label Lerros;
+    
+    int acertos = 0;
+    int erros = 0;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
@@ -48,6 +56,7 @@ public class FXMLTelaInicialController implements Initializable {
         } 
     }
 
+    
     public void getWord() throws FileNotFoundException, IOException{
         Random gerador = new Random();
         int lin = gerador.nextInt(29857) + 1;
@@ -72,31 +81,48 @@ public class FXMLTelaInicialController implements Initializable {
     
     @FXML
     public void clickOk(){
-        String palavratxt = palavraDici.getText();
-        String palavraBin = textBin.getText();
+        String palavraLabel = palavraDici.getText();
+        String palavraTextF = textBin.getText();
 
         
-//        System.out.printf(palavratxt );
-//        System.out.println(palavraBin);
+//        System.out.printf(palavraLabel);
+//        System.out.println(palavraTextF);
         
-        StringBuilder result = new StringBuilder();
-        char[] chars = palavratxt.toCharArray();
-        for (char aChar : chars) {
-            result.append(
-                    String.format("%8s", Integer.toBinaryString(aChar))   // char -> int, auto-cast
-                            .replaceAll(" ", "0")                         // zero pads
+        
+        StringBuilder BinTextF = new StringBuilder();
+        char[] chars2 = palavraTextF.toCharArray();
+        for (char aChar : chars2) {
+            BinTextF.append(
+                    String.format("%8s", Integer.toBinaryString(aChar))   
+                            .replaceAll(" ", "0")                         
             );
         }
         
-        System.out.println(result);
-        System.out.println(prettyBinary(result, 8, " "));
+        System.out.println(BinTextF);
+        System.out.println(prettyBinary(BinTextF, 8, " "));
+
+
+        StringBuilder BinLabel = new StringBuilder();
+        char[] chars1 = palavraLabel.toCharArray();
+        for (char aChar : chars1) {
+            BinLabel.append(
+                    String.format("%8s", Integer.toBinaryString(aChar))   
+                            .replaceAll(" ", "0")                         
+            );
+        }
+        
+        System.out.println(BinLabel);
+        System.out.println(prettyBinary(BinLabel, 8, " "));
+        
         
         //Campos Ultima palavra
-        UltPalavra.setText(palavratxt);
+        UltPalavra.setText(palavraLabel);
+        binC.setText(prettyBinary(BinLabel, 8, " "));
+        BinE.setText(prettyBinary(BinTextF, 8, " "));
+                
     }
 
     
-//    Formatação binario 8 casa
     public static String prettyBinary(StringBuilder binary, int blockSize, String separator) {
 
         List<String> result = new ArrayList<>();

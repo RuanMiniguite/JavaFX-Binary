@@ -31,12 +31,12 @@
                   <Font name="Yu Gothic Bold" size="50.0" />
                </font>
             </Label>
-            <Label fx:id="acertos" alignment="CENTER" layoutX="29.0" layoutY="545.0" prefHeight="25.0" prefWidth="31.0" text="0" textFill="#11bc36">
+            <Label fx:id="Lacertos" alignment="CENTER" layoutX="29.0" layoutY="545.0" prefHeight="25.0" prefWidth="31.0" text="0" textFill="#11bc36">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="erros" alignment="CENTER" layoutX="99.0" layoutY="545.0" prefHeight="25.0" prefWidth="31.0" text="0" textFill="RED">
+            <Label fx:id="Lerros" alignment="CENTER" layoutX="99.0" layoutY="545.0" prefHeight="25.0" prefWidth="31.0" text="0" textFill="RED">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

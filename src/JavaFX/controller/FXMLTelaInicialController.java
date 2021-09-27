@@ -25,9 +25,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-
 public class FXMLTelaInicialController implements Initializable {
-    
     
     //Campos Usuario
     @FXML
@@ -51,9 +49,9 @@ public class FXMLTelaInicialController implements Initializable {
     @FXML
     private Label Lerros;
     
+    
     int acertos = 0;
     int erros = 0;
-    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -64,7 +62,6 @@ public class FXMLTelaInicialController implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(FXMLTelaInicialController.class.getName()).log(Level.SEVERE, null, ex);
         }
-    
     }
     
     public void getWord() throws FileNotFoundException, IOException{
@@ -107,10 +104,6 @@ public class FXMLTelaInicialController implements Initializable {
         
         //Formatação em blocos de 8
         String resultBin = prettyBinary(BinText, 8, " ");
-        
-//        System.out.println(resultBin);
-//        System.out.println(palavraTextF);  
-        
 
         //Contador de acertos
         if(palavraTextF.equals(resultBin)){
@@ -126,7 +119,6 @@ public class FXMLTelaInicialController implements Initializable {
             alert.setHeaderText("Campos Vazio");
             alert.setContentText("Digite o texto binario correspodente a palavra!");
             alert.show();
-            
         }else{
             erros++;
             Lerros.setText(Integer.toString(erros));
@@ -145,7 +137,6 @@ public class FXMLTelaInicialController implements Initializable {
 
     
     public static String prettyBinary(StringBuilder binary, int blockSize, String separator) {
-
         List<String> result = new ArrayList<>();
         int index = 0;
         while (index < binary.length()) {
@@ -158,7 +149,6 @@ public class FXMLTelaInicialController implements Initializable {
     @FXML
     public void showtelaAscii() throws IOException{    
         //Abrir tela com tabela ASCII
-        
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(FXMLAsciiController.class.getResource("/javaFX/view/FXMLAscii.fxml"));
         AnchorPane page = (AnchorPane) loader.load();

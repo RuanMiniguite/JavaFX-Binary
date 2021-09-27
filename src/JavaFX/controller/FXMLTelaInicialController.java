@@ -18,6 +18,7 @@ import javafx.scene.control.Label;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
@@ -57,7 +58,8 @@ public class FXMLTelaInicialController implements Initializable {
             Logger.getLogger(FXMLTelaInicialController.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
             Logger.getLogger(FXMLTelaInicialController.class.getName()).log(Level.SEVERE, null, ex);
-        } 
+        }
+    
     }
 
     
@@ -105,6 +107,16 @@ public class FXMLTelaInicialController implements Initializable {
             acertos++;
             Lacertos.setText(Integer.toString(acertos));
             BinE.setTextFill(Color.rgb(27, 166, 72, 1));
+        }else if(palavraTextF.equals("")){
+            Lerros.setText(Integer.toString(erros));
+            BinE.setTextFill(Color.rgb(166, 27, 27, 1));
+            
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Erro");
+            alert.setHeaderText("Campos Vazio");
+            alert.setContentText("Digite o texto binario correspodente a palavra!");
+            alert.show();
+            
         }else{
             erros++;
             Lerros.setText(Integer.toString(erros));

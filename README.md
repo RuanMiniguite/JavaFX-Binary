@@ -18,7 +18,7 @@ The program draws words, where the user must write the correct binary correspond
 
 <br>
 
-#### LAYOUT
+### LAYOUT
 
 <div>
 

@@ -28,13 +28,16 @@ import javafx.stage.Stage;
 
 public class FXMLTelaInicialController implements Initializable {
     
-    @FXML
-    private Button ok;
+    
+    //Campos Usuario
     @FXML
     private Label palavraDici;
     @FXML
     private TextField textBin;
+    @FXML
+    private Button ok;
     
+    //Campos ultima palavra
     @FXML
     private Label UltPalavra;
     @FXML
@@ -42,6 +45,7 @@ public class FXMLTelaInicialController implements Initializable {
     @FXML
     private Label BinE;
     
+    //Contador de acertos
     @FXML
     private Label Lacertos;
     @FXML
@@ -50,10 +54,11 @@ public class FXMLTelaInicialController implements Initializable {
     int acertos = 0;
     int erros = 0;
     
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
-            getWord();
+            getWord(); //Iniciar com uma palavra
         } catch (FileNotFoundException ex) {
             Logger.getLogger(FXMLTelaInicialController.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
@@ -61,9 +66,10 @@ public class FXMLTelaInicialController implements Initializable {
         }
     
     }
-
     
     public void getWord() throws FileNotFoundException, IOException{
+        
+        //Sorter uma linha do arq
         Random gerador = new Random();
         int lin = gerador.nextInt(29857) + 1;
         int i = 0;
@@ -72,6 +78,7 @@ public class FXMLTelaInicialController implements Initializable {
         BufferedReader lerArq = new BufferedReader(arq);
         String linha = lerArq.readLine();
         
+        //Varrer o arq até a linha sorteada
         do{
             if(i == lin){
                 palavraDici.setText(linha.toLowerCase());
@@ -88,7 +95,7 @@ public class FXMLTelaInicialController implements Initializable {
         String palavraLabel = palavraDici.getText();
         String palavraTextF = textBin.getText();
         
-        
+        //Conversão para binario
         StringBuilder BinText = new StringBuilder();
         char[] chars = palavraLabel.toCharArray();
         for (char aChar : chars) {
@@ -98,11 +105,14 @@ public class FXMLTelaInicialController implements Initializable {
             );
         }
         
+        //Formatação em blocos de 8
         String resultBin = prettyBinary(BinText, 8, " ");
         
 //        System.out.println(resultBin);
 //        System.out.println(palavraTextF);  
         
+
+        //Contador de acertos
         if(palavraTextF.equals(resultBin)){
             acertos++;
             Lacertos.setText(Integer.toString(acertos));
@@ -123,7 +133,8 @@ public class FXMLTelaInicialController implements Initializable {
             BinE.setTextFill(Color.rgb(166, 27, 27, 1));
         }
 
-        //Campos Ultima palavra
+        
+        //Preencher campos Ultima palavra
         UltPalavra.setText(palavraLabel);
         binC.setText(prettyBinary(BinText, 8, " "));
         BinE.setText(palavraTextF);
@@ -146,6 +157,8 @@ public class FXMLTelaInicialController implements Initializable {
     
     @FXML
     public void showtelaAscii() throws IOException{    
+        //Abrir tela com tabela ASCII
+        
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(FXMLAsciiController.class.getResource("/javaFX/view/FXMLAscii.fxml"));
         AnchorPane page = (AnchorPane) loader.load();

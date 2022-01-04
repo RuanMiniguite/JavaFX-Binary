@@ -51,7 +51,7 @@
 ## About the project
 
 <div align="center">
-  <img src="https://media.discordapp.net/attachments/892092323394125854/892092678043492433/Binary_telaPrincipal.jpg?width=612&height=480" width=80%>
+  <img src="https://media.discordapp.net/attachments/892092323394125854/892092678043492433/Binary_telaPrincipal.jpg?width=612&height=480" width=60%>
 <br><br>
 
   <!-- [![Site][Site-shields]][Site-link] -->
@@ -116,7 +116,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- ============== AUTHOR ============== -->
 ## Author
 
-Ruan Pezzin Miniguite <br> ruanminiguitecontato@gmail.com
+[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=115" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)
 
 <p align="right">(<a href="#header">back to top</a>)</p>
 

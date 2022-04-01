@@ -1,19 +1,16 @@
 <!--  
     Ruan Pezzin Miniguite
-    V. 2.0 
+    V. 2.2 
 -->
 
 <!-- ============== HEADER ============== -->
 <div align="center" id="header">
-
-  <a href="https://github.com/RuanMiniguite">
-    <img src="https://media.discordapp.net/attachments/892092323394125854/892094774784430100/b-512x512.png?width=480&height=480" alt="Logo" width="100" height="100">
-  </a>
-  <h3 align="center">JavaFX Binary</h3>
-  <p align="center">
-    Binary
-  </p>
+  <a href="https://github.com/RuanMiniguite"><img src="assets/Logo.png" alt="Logo" width="110"></a>
+  
+  <h3>JavaFX Binary</h3>
+  <p>Binary</p>
 </div>
+
 
 <!-- ===== SUMARIO ===== -->
 <details>
@@ -32,6 +29,7 @@
 ---
 
 
+
 <!-- ============== SHIELDS ============== -->
 <div align="center">
 
@@ -41,18 +39,16 @@
   [![GitHub License][GitHub License-shields]][GitHub License-link]
   [![Website][Website-shields]][Website-link]
 
-  <h4 align="center"> 
-    🚧  Project under construction...  🚧
-  </h4>
+  <h4>🚧 Project under construction... 🚧</h4>
 </div>
+
 
 
 <!-- ============== ABOUT ============== -->
 ## About the project
 
 <div align="center">
-  <img src="https://media.discordapp.net/attachments/892092323394125854/892092678043492433/Binary_telaPrincipal.jpg?width=612&height=480" width=60%>
-<br><br>
+  <img src="/assets/Binary_telaPrincipal.jpg" alt="Print" width=90% ><br><br>
 
   <!-- [![Site][Site-shields]][Site-link] -->
 </div>
@@ -60,32 +56,35 @@
 <p>The program draws words, where the user must write the correct binary corresponding to the drawn word. Receiving 1 point if you hit or miss.</p>
 
 
+
 <!-- ============== LAYOUT ============== -->
 ## Layout
 
 <div>
-
-  <img src="https://media.discordapp.net/attachments/892092323394125854/892092665301196800/Binary_Ascii.jpg?width=356&height=480" width="25%">
+  <img src="/assets/Binary_Ascii.jpg" alt="Print" width="25%">
 </div>
+
 
 
 <!-- ============== LANGUAGE ============== -->
 ## Language and tools
 
-<h4>Front end</h4>
- <ol>
-    <li>JavaFXML</li>
-    <li>Scene builder</li>
-  </ol>
- 
-<h4>Back end</h4>
- <ol>
-    <li>Java</li>
-  </ol>
+#### Front end
+```
+> JavaFXML
+> Scene Builder
+```
+
+#### Back end
+```
+> Java
+```
+
 
 
 <!-- ============== IDEAS ============== -->
 <!-- ## Implementation ideas
+
 - [x] Example
 - [ ] Example -->
 
@@ -95,44 +94,39 @@
 ## Installation
 
 <h4>Requirements</h4>
-<h4>Requirements</h4>
-
-<ol>
-  <li>Install Java 8.2</li>
-  <li>Install Netbeans</li>
-</ol>
-
+<!-- Write here -->
 
 ```
 Git Clone https://github.com/RuanMiniguite/JavaFX-Binary.git
 ```
 
+
 <!-- ============== LICENSE ============== -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- ============== AUTHOR ============== -->
 ## Author
 
-[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=115" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)
+[<img alt="RuanMiniguite" src="https://github.com/RuanMiniguite.png?size=210" width="115"><br><sub>@RuanMiniguite</sub>](https://github.com/RuanMiniguite)
+
 
 <p align="right">(<a href="#header">back to top</a>)</p>
 
 
 <!-- ============== LINKs ============== -->
 <!-- Alterar link -->
-[Site-link]: https://github.com/RuanMiniguite/JavaFX-Binary
-[GitHub License-link]: https://github.com/RuanMiniguite/JavaFX-Binary/blob/0bfe39018e7ff79a7f0505ac851b51a36c069734/LICENSE
-
+[Site-link]: https://github.com/RuanMiniguite/Template-Readme
+[GitHub License-link]: https://github.com/RuanMiniguite/JavaFX-Binary/blob/c708f5d20f2845b0b8a4d470f8857e7ae5d78620/LICENSE
 
 <!-- Alterar caminho para repositorio [Template-Readme] -->
 [GitHub repo size-shields]: https://img.shields.io/github/repo-size/RuanMiniguite/JavaFX-Binary?style=for-the-badge
 [GitHub language count-shields]: https://img.shields.io/github/languages/count/RuanMiniguite/JavaFX-Binary?style=for-the-badge
 [GitHub forks-shields]: https://img.shields.io/github/forks/RuanMiniguite/JavaFX-Binary?style=for-the-badge
 
-
+<!-- link Shields-->
 [GitHub License-shields]: https://img.shields.io/cocoapods/l/m?down_color=292929&up_color=292929&style=for-the-badge
 [Site-shields]: https://img.shields.io/badge/Site-Live-292929?style=for-the-badge&logo=web&logoColor=white
 [Website-link]: https://github.com/RuanMiniguite/Commit-Message

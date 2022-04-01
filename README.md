@@ -48,7 +48,7 @@
 ## About the project
 
 <div align="center">
-  <img src="/assets/Binary_telaPrincipal.jpg" alt="Print" width=90% ><br><br>
+  <img src="/assets/Binary_telaPrincipal.jpg" alt="Print" width=80% ><br><br>
 
   <!-- [![Site][Site-shields]][Site-link] -->
 </div>
@@ -61,7 +61,7 @@
 ## Layout
 
 <div>
-  <img src="/assets/Binary_Ascii.jpg" alt="Print" width="25%">
+  <img src="/assets/Binary_Ascii.jpg" alt="Print" width="35%">
 </div>
 
 

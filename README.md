@@ -39,7 +39,7 @@
   [![GitHub License][GitHub License-shields]][GitHub License-link]
   [![Website][Website-shields]][Website-link]
 
-  <h4>🚧 Project under construction... 🚧</h4>
+<!-- <h4>🚧 Project under construction... 🚧</h4> -->
 </div>
 
 

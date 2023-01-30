@@ -107,13 +107,13 @@ This project is [MIT][GitHub License-link] licensed.
 [GitHub License-link]: https://github.com/RuanMiniguite/JavaFX-Binary/blob/c7acffe0fc06326c93a36668f6cc7e725d9135a2/LICENSE
 
 <!-- Alterar caminho para repositorio [Template-Readme] -->
-[GitHub repo size-shields]: https://img.shields.io/github/repo-size/RuanMiniguite/JavaFX-Binary?style=for-the-badge&color=292929
-[GitHub language count-shields]: https://img.shields.io/github/languages/count/RuanMiniguite/JavaFX-Binary?style=for-the-badge&color=292929
-[GitHub forks-shields]: https://img.shields.io/github/forks/RuanMiniguite/JavaFX-Binary?style=for-the-badge&color=292929
-[GitHub stars-shields]: https://img.shields.io/github/stars/RuanMiniguite/JavaFX-Binary?style=for-the-badge&color=292929
+[GitHub repo size-shields]: https://img.shields.io/github/repo-size/RuanMiniguite/JavaFX-Binary?style=for-the-badge&color=FF8801
+[GitHub language count-shields]: https://img.shields.io/github/languages/count/RuanMiniguite/JavaFX-Binary?style=for-the-badge&color=FF8801
+[GitHub forks-shields]: https://img.shields.io/github/forks/RuanMiniguite/JavaFX-Binary?style=for-the-badge&color=FF8801
+[GitHub stars-shields]: https://img.shields.io/github/stars/RuanMiniguite/JavaFX-Binary?style=for-the-badge&color=FF8801
 
 <!-- Permalink Shields-->
-[GitHub License-shields]: https://img.shields.io/cocoapods/l/m?down_color=292929&up_color=292929&color=292929&style=for-the-badge
+[GitHub License-shields]: https://img.shields.io/cocoapods/l/m?down_color=292929&up_color=292929&color=FF8801&style=for-the-badge
 [Site-shields]: https://img.shields.io/badge/Site-Live-292929?style=for-the-badge&logo=web&logoColor=white
 [Website-link]: https://github.com/RuanMiniguite/Commit-Message
-[Website-shields]: https://img.shields.io/website?down_color=292929&down_message=404&style=for-the-badge&logo=github&up_color=292929&up_message=Commit&url=https%3A%2F%2Fgithub.com%2FRuanMiniguite%2FCommit-Message
+[Website-shields]: https://img.shields.io/website?down_color=292929&down_message=404&style=for-the-badge&logo=github&up_color=FF8801&up_message=Commit&url=https%3A%2F%2Fgithub.com%2FRuanMiniguite%2FCommit-Message
